@@ -28,6 +28,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .image {
@@ -40,16 +41,17 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .header-container {
   padding: 20px;
-  width: 70%;
+  width: 60%;
   border: 2px solid #ffffff;
   border-radius: 15px;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .game-item-name {
@@ -58,43 +60,99 @@ body {
   font-weight: 600;
   font-size: 25px;
 }
+.score-container {
+  background-color: #ffffff;
+  width: 150px;
+  height: 120px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-heading {
+  font-size: 28px;
+  font-family: 'roboto';
+  font-family: 'bree serif';
+  font-weight: 600;
+  color: #223a5f;
+}
+.score {
+  font-family: 'Roboto';
+  font-size: 60px;
+  color: #223a5f;
+  font-weight: 600;
+}
 
 .game-container {
   width: 50%;
-  margin: auto;
 }
 
 .rules-btn {
-  font-family: 'bree serif';
-  font-size: 20px;
-  background-color: #ffffff;
-  color: #223a5f;
+  font-size: 16px;
   height: 32px;
-  width: 86px;
-  border-radius: 5px;
-  border: none;
+  width: 96px;
+  font-weight: 400;
+  font-family: 'bree serif';
+  color: #223a5f;
   cursor: pointer;
+  align-self: flex-end;
+  margin: 8px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
   outline: none;
 }
+.game-play-container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.final-result-container {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.play-again-btn {
+  width: 150px;
+  height: 45px;
+  background-color: #ffffff;
+  color: #223a5f;
+  font-size: 20px;
+  font-family: 'bree serif';
+  border: none;
+  outline: none;
+  cursor: pointer;
 
+  border-radius: 5px;
+}
 .popup-container {
   background-color: #223a5f;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   align-self: flex-end;
+  justify-content: center;
+  margin-right: 100px;
 }
 
 .close-btn {
   background: none;
   border: none;
-  width: 50px;
-  height: 50px;
   align-self: flex-end;
+  color: #223a5f;
+  outline: none;
+  cursor: pointer;
 }
 
 .close-icon {
-  width: 50px;
-  color: #ffffff;
+  font-size: 30px;
+  color: #223a5f;
+  outline: none;
 }
 
 .rules-image-container {
@@ -104,5 +162,33 @@ body {
 }
 
 .rules-image {
-  width: 600px;
+  width: 90%;
+  margin: auto;
+}
+
+.inner-popup-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  font-family: 'roboto';
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.user-opp-container {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.each-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
